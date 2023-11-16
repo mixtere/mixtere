@@ -1,84 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website Title</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
-
-        main {
-            display: flex;
-            justify-content: space-between;
-            padding: 1em;
-        }
-
-        .column {
-            flex-basis: 30%;
-            margin-right: 1em;
-        }
-
-        aside {
-            width: 20%;
-            background-color: #f4f4f4;
-            padding: 1em;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Your Website</h1>
-</header>
+    <header>
+        <!-- Add your header content here -->
+    </header>
 
-<main>
+    <div class="main-content">
+        <div class="three-columns">
+            <!-- Column 1 -->
+            <div class="column">
+                <img src="path/to/image1.jpg" alt="Article 1">
+                <h2><a href="article1.html">Article 1 Title</a></h2>
+                <!-- Add other content for the first column here -->
+            </div>
 
-    <!-- Sidebar Menu -->
-    <aside>
-        <h2>Menu</h2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Writing</a></li>
-            <li><a href="#">Art</a></li>
-            <li><a href="#">Audio</a></li>
-            <li><a href="#">Video</a></li>
-            <li><a href="#">Travel Blog</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-        <!-- Add social media links here -->
-    </aside>
+            <!-- Column 2 -->
+            <div class="column">
+                <img src="path/to/image2.jpg" alt="Article 2">
+                <h2><a href="article2.html">Article 2 Title</a></h2>
+                <!-- Add other content for the second column here -->
+            </div>
 
-    <!-- Three-column layout with placeholders -->
-    <div class="column">
-        <img src="path_to_image1.jpg" alt="Image 1">
-        <h2>Title of Article 1</h2>
-        <!-- Add any additional content or text here -->
+            <!-- Column 3 -->
+            <div class="column">
+                <img src="path/to/image3.jpg" alt="Article 3">
+                <h2><a href="article3.html">Article 3 Title</a></h2>
+                <!-- Add other content for the third column here -->
+            </div>
+        </div>
+
+        <!-- Sidebar menu -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="writing.html">Writing</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="travel-blog.html">Travel Blog</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+            <!-- Add links to social media here -->
+            <div class="social-media">
+                <a href="link-to-reddit">Reddit</a>
+                <a href="link-to-youtube">YouTube</a>
+                <a href="link-to-twitter">Twitter</a>
+                <a href="link-to-instagram">Instagram</a>
+            </div>
+        </div>
     </div>
 
-    <div class="column">
-        <img src="path_to_image2.jpg" alt="Image 2">
-        <h2>Title of Article 2</h2>
-        <!-- Add any additional content or text here -->
-    </div>
-
-    <div class="column">
-        <img src="path_to_image3.jpg" alt="Image 3">
-        <h2>Title of Article 3</h2>
-        <!-- Add any additional content or text here -->
-    </div>
-
-</main>
+    <footer>
+        <!-- Add your footer content here -->
+    </footer>
 
 </body>
+
 </html>
