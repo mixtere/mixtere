@@ -1,0 +1,18 @@
+<div style="display: flex; justify-content: space-between;">
+
+    <!-- Column 1 -->
+    <div style="flex-basis: 30%;">
+        <!-- Add content for the first column here -->
+    </div>
+
+    <!-- Column 2 -->
+    <div style="flex-basis: 30%;">
+        <!-- Add content for the second column here -->
+    </div>
+
+    <!-- Column 3 -->
+    <div style="flex-basis: 30%;">
+        <!-- Add content for the third column here -->
+    </div>
+
+</div>
