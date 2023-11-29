@@ -1,2 +1,2 @@
 # mainsite
-An attempt at my new website
+Soul Stroll- Walking this earth, for a time.
