@@ -20,6 +20,24 @@ header {
     text-align: center;
 }
 
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px; /* Add space between menu items */
+}
+
+nav ul li a {
+    color: white; /* Change menu link color to white */
+    font-family: Arial, sans-serif; /* Change font family */
+    font-size: 16px; /* Adjust font size */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make font bold */
+}
+
 .social-media {
     display: flex;
     justify-content: center;
@@ -40,7 +58,7 @@ header {
 }
 
 .column {
-    border: 1px solid #ccc;
+    border: 2px solid #ccc; /* Add thicker border */
     padding: 10px;
     text-align: center;
     background-color: #fff;
@@ -50,19 +68,11 @@ header {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
+    border: 1px solid #000; /* Add frame to images */
 }
 
 /* Define specific styles for different screen sizes */
 @media only screen and (max-width: 768px) {
     /* Adjust styles for smaller screens */
     .content {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    /* Adjust styles for even smaller screens */
-    .content {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-}
+        grid-template-columns: repeat(auto-fit, minmax(200px, 
