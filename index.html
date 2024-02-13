@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mixter E</title>
+    <title>Soul Stroll</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS styles for specific elements */
+        /* Adjust as needed */
+        body {
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-media img {
+            margin: 0 10px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .column {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .column img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 
-<!-- Header with Social Media Links -->
 <header>
     <h1>Mixter E</h1>
     <nav>
@@ -38,38 +83,43 @@
     </div>
 </header>
 
-<!-- Main Content -->
 <div class="content">
-    <!-- Featured Articles Section -->
-    <section class="featured-articles">
-        <h2>Featured Articles</h2>
-        <div class="article-grid">
-            <!-- Article 1 -->
-            <article>
-                <img src="path/to/placeholder1.jpg" alt="Article 1">
-                <h3><a href="article1.html">Article 1 Title</a></h3>
-                <p>Caption for Article 1.</p>
-            </article>
-            <!-- Article 2 -->
-            <article>
-                <img src="path/to/placeholder2.jpg" alt="Article 2">
-                <h3><a href="article2.html">Article 2 Title</a></h3>
-                <p>Caption for Article 2.</p>
-            </article>
-            <!-- Article 3 -->
-            <article>
-                <img src="path/to/placeholder3.jpg" alt="Article 3">
-                <h3><a href="article3.html">Article 3 Title</a></h3>
-                <p>Caption for Article 3.</p>
-            </article>
-            <!-- Article 4 -->
-            <article>
-                <img src="path/to/placeholder4.jpg" alt="Article 4">
-                <h3><a href="article4.html">Article 4 Title</a></h3>
-                <p>Caption for Article 4.</p>
-            </article>
-        </div>
-    </section>
+    <!-- Three Horizontal Columns -->
+    <div class="column">
+        <!-- Column 1 Content -->
+        <img src="https://via.placeholder.com/300" alt="Placeholder">
+        <h2><a href="articles.html">Articles</a></h2>
+        <p>Articles</p>
+    </div>
+
+    <div class="column">
+        <!-- Column 2 Content -->
+        <img src="https://via.placeholder.com/300" alt="Placeholder">
+        <h2><a href="article2.html">Article 2 Title</a></h2>
+        <p>Caption for Article 2.</p>
+    </div>
+
+    <div class="column">
+        <!-- Column 3 Content -->
+        <img src="https://via.placeholder.com/300" alt="Placeholder">
+        <h2><a href="article3.html">Article 3 Title</a></h2>
+        <p>Caption for Article 3.</p>
+    </div>
+
+    <!-- Two Vertical Columns -->
+    <div class="column">
+        <!-- Column 4 Content -->
+        <img src="https://via.placeholder.com/300" alt="Placeholder">
+        <h2><a href="article4.html">Article 4 Title</a></h2>
+        <p>Caption for Article 4.</p>
+    </div>
+
+    <div class="column">
+        <!-- Column 5 Content -->
+        <img src="https://via.placeholder.com/300" alt="Placeholder">
+        <h2><a href="article5.html">Article 5 Title</a></h2>
+        <p>Caption for Article 5.</p>
+    </div>
 </div>
 
 </body>
