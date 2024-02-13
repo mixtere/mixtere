@@ -1,68 +1,38 @@
-/* Resetting default margin and padding */
-* {
+/* Styles for the header */
+header {
+    background-color: #333; /* Dark background color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles for the navigation menu */
+nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Additional CSS styles for specific elements */
-/* Adjust as needed */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-.social-media {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
 }
 
-.social-media img {
-    margin: 0 10px;
-    width: 50px;
-    height: 50px;
+nav ul li {
+    margin-right: 20px;
 }
 
+/* Styles for the content section */
 .content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Dynamic sizing grid */
     gap: 20px;
     padding: 20px;
 }
 
-.column {
-    border: 1px solid #ccc;
-    padding: 10px;
+/* Styles for the social media links at the bottom */
+.social-media-bottom {
     text-align: center;
-    background-color: #fff;
+    padding: 20px;
 }
 
-.column img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* Define specific styles for different screen sizes */
-@media only screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-    .content {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    /* Adjust styles for even smaller screens */
-    .content {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
+.social-media-bottom img {
+    margin-right: 10px;
 }
