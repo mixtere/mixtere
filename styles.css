@@ -1,48 +1,59 @@
-/* styles.css */
-
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 20px;
 }
 
 .column {
-    box-sizing: border-box;
-    margin: 0 0 20px;
-    padding: 0 20px;
+    width: 45%;
+    margin-bottom: 20px;
 }
 
-/* Three columns layout for larger screens */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.column img {
+    width: 100%;
+    height: auto;
 }
 
-/* Styles for individual columns */
-.column {
-    flex-basis: 30%;
+.column h2 {
+    margin-top: 10px;
+    font-size: 20px;
 }
 
-/* Media queries for responsive design */
-@media screen and (max-width: 600px) {
-    .column {
-        flex-basis: 100%;
-    }
-}
-
-@media screen and (min-width: 601px) and (max-width: 900px) {
-    .column {
-        flex-basis: 48%;
-    }
-}
-
-@media screen and (min-width: 901px) {
-    .column {
-        flex-basis: 30%;
-    }
+.column p {
+    font-size: 16px;
 }
