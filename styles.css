@@ -1,54 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mixter E</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<!-- Header with Social Media Links -->
-<header>
-    <h1 style="color: white; font-family: Arial, sans-serif;">Mixter E</h1>
-    <nav>
-        <ul>
-            <li><strong style="color: white; font-family: Arial, sans-serif;">Home</strong></li>
-            <li><a href="articles.html" style="color: white; font-family: Arial, sans-serif;">Articles</a></li>
-            <li><a href="bbg&b.html" style="color: white; font-family: Arial, sans-serif;">Beans Bodhgaya & Beyond</a></li>
-            <li><a href="art.html" style="color: white; font-family: Arial, sans-serif;">Art</a></li>
-            <li><a href="video.html" style="color: white; font-family: Arial, sans-serif;">Video</a></li>
-        </ul>
-    </nav>
-    <div class="social-media">
-        <!-- Vector Artwork Placeholders -->
-        <img src="path/to/vector-artwork-left.png" alt="Vector Artwork Left" style="width: 50px; height: 50px;">
-        <img src="path/to/vector-artwork-right.png" alt="Vector Artwork Right" style="width: 50px; height: 50px;">
-    </div>
-</header>
+/* Additional CSS styles for specific elements */
+/* Adjust as needed */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
 
-<!-- Main Content -->
-<div class="content">
-    <!-- Your content goes here -->
-</div>
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
 
-<!-- Social Media Links at the Bottom -->
-<div class="social-media-bottom">
-    <!-- PayPal Button -->
-    <a href="https://www.paypal.com/your-paypal-link" target="_blank">
-        <img src="path/to/paypal-icon.png" alt="PayPal" style="width: 50px; height: 50px;">
-    </a>
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
 
-    <!-- Reddit Button -->
-    <a href="https://www.reddit.com/r/your-subreddit" target="_blank">
-        <img src="path/to/reddit-icon.png" alt="Reddit" style="width: 50px; height: 50px;">
-    </a>
+.social-media img {
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+}
 
-    <!-- YouTube Button -->
-    <a href="https://www.youtube.com/user/your-channel" target="_blank">
-        <img src="path/to/youtube-icon.png" alt="YouTube" style="width: 50px; height: 50px;">
-    </a>
-</div>
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
 
-</body>
-</html>
+.column {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Define specific styles for different screen sizes */
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjust styles for even smaller screens */
+    .content {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
