@@ -1,34 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mixter E</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-<!-- Header with Social Media Links -->
-<header>
-    <h1><a href="index.html">Mixter E</a></h1>
-    <nav>
-        <ul>
-            <li><a href="articles.html">Articles</a></li>
-            <li><a href="bbg&b.html">Beans Bodhgaya & Beyond</a></li>
-            <li><a href="art.html">Art</a></li>
-            <li><a href="video.html">Video</a></li>
-        </ul>
-    </nav>
-    <div class="social-media">
-        <!-- PayPal Button -->
-        <a href="https://www.paypal.com/your-paypal-link" target="_blank">
-            <img src="path/to/paypal-icon.png" alt="PayPal">
-        </a>
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
 
-        <!-- Reddit Button -->
-        <a href="https://www.reddit.com/r/your-subreddit" target="_blank">
-            <img src="path/to/reddit-icon.png" alt="Reddit">
-        </a>
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-        <!-- YouTube Button -->
-        <a href="https://www.youtube.com/user/your-channel" target="_blank">
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.column {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+.column h2 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.column p {
+    font-size: 16px;
+}
