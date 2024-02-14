@@ -66,20 +66,3 @@ header {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
-
-header h1 a {
-    text-decoration: none; /* Remove underline from the link */
-    color: #fff; /* Change link color to white */
-    font-family: Arial, sans-serif; /* Maintain font consistency */
-}
-
-.featured-article {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.featured-article img {
-    width: 100%; /* Ensure image fills the container */
-    max-width: 100%; /* Ensure image does not exceed its container */
-    height: auto; /* Maintain aspect ratio */
-}
