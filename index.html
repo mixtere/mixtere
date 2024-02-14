@@ -1,59 +1,126 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Stroll</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS styles for specific elements */
+        /* Adjust as needed */
+        body {
+            background-color: #f4f4f4;
+        }
 
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
-}
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
+        .social-media img {
+            margin: 0 10px;
+            width: 50px;
+            height: 50px;
+        }
 
-.social-media {
-    display: flex;
-    align-items: center;
-}
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
 
-.social-media img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
+        .column {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+        }
 
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-}
+        .column img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
 
-.column {
-    width: 45%;
-    margin-bottom: 20px;
-}
+<header>
+    <h1>Mixter E</h1>
+    <nav>
+        <ul>
+            <li><strong>Home</strong></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="bbg&b.html">Beans Bodhgaya & Beyond</a></li>
+            <li><a href="art.html">Art</a></li>
+            <li><a href="video.html">Video</a></li>
+        </ul>
+    </nav>
+    <div class="social-media">
+        <!-- PayPal Button -->
+        <a href="https://www.paypal.com/your-paypal-link" target="_blank">
+            <img src="path/to/paypal-icon.png" alt="PayPal">
+        </a>
 
-.column img {
-    width: 100%;
-    height: auto;
-}
+        <!-- Reddit Button -->
+        <a href="https://www.reddit.com/r/your-subreddit" target="_blank">
+            <img src="path/to/reddit-icon.png" alt="Reddit">
+        </a>
 
-.column h2 {
-    margin-top: 10px;
-    font-size: 20px;
-}
+        <!-- YouTube Button -->
+        <a href="https://www.youtube.com/user/your-channel" target="_blank">
+            <img src="path/to/youtube-icon.png" alt="YouTube">
+        </a>
+    </div>
+</header>
 
-.column p {
-    font-size: 16px;
-}
+<div class="content">
+    <!-- Three Horizontal Columns -->
+    <div class="column">
+        <!-- Column 1 Content -->
+        <img src="https://via.placeholder.com/300" alt="Placeholder">
+        <h2><a href="articles.html">Articles</a></h2>
+        <p>Articles</p>
+    </div>
+
+    <div class="column">
+        <!-- Column 2 Content -->
+        <img src="https://via.placeholder.com/300" alt="Placeholder">
+        <h2><a href="article2.html">Article 2 Title</a></h2>
+        <p>Caption for Article 2.</p>
+    </div>
+
+    <div class="column">
+        <!-- Column 3 Content -->
+        <img src="https://via.placeholder.com/300" alt="Placeholder">
+        <h2><a href="article3.html">Article 3 Title</a></h2>
+        <p>Caption for Article 3.</p>
+    </div>
+
+    <!-- Two Vertical Columns -->
+    <div class="column">
+        <!-- Column 4 Content -->
+        <img src="https://via.placeholder.com/300" alt="Placeholder">
+        <h2><a href="article4.html">Article 4 Title</a></h2>
+        <p>Caption for Article 4.</p>
+    </div>
+
+    <div class="column">
+        <!-- Column 5 Content -->
+        <img src="https://via.placeholder.com/300" alt="Placeholder">
+        <h2><a href="article5.html">Article 5 Title</a></h2>
+        <p>Caption for Article 5.</p>
+    </div>
+</div>
+
+</body>
+</html>
