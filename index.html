@@ -1,165 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mixter E</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Additional CSS styles for specific elements */
-        /* Adjust as needed */
-        body {
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
+/* Additional CSS styles for specific elements */
+/* Adjust as needed */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
 
-        .social-media {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
 
-        .social-media img {
-            margin: 0 10px;
-            width: 50px;
-            height: 50px;
-        }
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
 
-        .content {
-            padding: 20px;
-        }
+.social-media img {
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+}
 
-        .column {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: center;
-            background-color: #fff;
-            margin-bottom: 20px;
-        }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-        .column img {
-            max-width: 100%; /* Ensure the image does not exceed its container's width */
-            height: auto;
-            width: 100%; /* Expand image to the maximum width of its container */
-        }
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
 
-        .column h2 {
-            margin-top: 10px;
-            font-size: 20px;
-            color: #333; /* Adjust font color */
-        }
+.dropdown-menu li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
 
-        .column p {
-            font-size: 16px;
-            color: #666;
-        }
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
 
-        /* Menu styles */
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+/* Additional styles for menu links */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
+nav ul li a {
+    color: white; /* Set font color to white */
+    text-decoration: none;
+    font-size: 18px; /* Adjust font size as needed */
+}
 
-        /* Footer styles */
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <!-- Placeholder for Header Image -->
-    <a href="https://mixtere.com" target="https://mixtere.com">
-        <img src="https://i.postimg.cc/kMYLWMZT/Mixtere-Small-Header.png">
-        </a>
-    
-        <nav>
-            <ul>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="art.html">Art</a></li>
-                <li><a href="video.html">Video</a></li>
-            </ul>
-            <h2>Mixter E</h2>
-            <h5>* Non-mobile users, resize window to adjust size</h5>
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
 
-        </nav>
-    </header>
-<div class="content">
-<!-- Single Column with Large Image -->
-<div class="column">
-<!-- Large Image -->
-<img src="https://i.postimg.cc/Px6hTyxh/BBG-B19-Tawang-To-Tezpur-5.jpg" alt="stuff" />
-</div>   
-<!-- Single Column with Large Image -->
-<div class="column">
-<!-- Large Image -->
-<img src="https://i.postimg.cc/c1Fd8HqQ/temp-Image-UIKlpt.avif" alt="stuff" />
-</div>
-<div class="column">
-<!-- Large Image -->
-<img src="https://i.postimg.cc/nrSZ8dKd/temp-Image-Hd-MNJL.avif" alt="stuff" />
-</div>   
-<div>  <a href="pagelocation.html">
-    <img src="https://i.postimg.cc/90wXZqnt/NEXTARROW.png" alt="Next">
-</a>
-</div>
+/* Adjust image size based on screen size */
+img.large-screen {
+    width: 100%; /* Full width on large screens */
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center the image */
+}
 
-<!-- Footer -->
-<footer>
-    <!-- Social Media Donation Button -->
-<div class="social-media">
-    <!-- YouTube ButtonUC5 -->
-    <a href="https://www.youtube.com/channel/UC5B6qJr0yyyDnBBgXEtMGxQ?app" target="Mixter E YT channel">
-        <img src="https://yt3.googleusercontent.com/FWvI-Xu8xDYUioU998Gxk0TAqNY45tvY3xZ7UD61KqnN5zMz0ka8AI6V_m6aei-Y8QNBXMYjd2Y=s176-c-k-c0x00ffffff-no-rj" alt="YouTube">
-    </a></p> Mixter E YouTube</p>
-</div>
-<div class="social-media">
-    <!-- Paypal Donation Button -->
-    </a></p>Paypal Donation</p>
-    <form action="https://www.paypal.com/donate" method="post" target="_top">
-        <input type="hidden" name="business" value="49EEAM93YMBY4" />
-        <input type="hidden" name="no_recurring" value="0" />
-        <input type="hidden" name="item_name" value="I'm trying to stand for truth, originality, honesty and fun here. Appreciate what I am doing? Let me know!" />
-        <input type="hidden" name="currency_code" value="USD" />
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-        </form>
-        
-</div>
-<p>&copy; 2024 Mixter E. All Rights Reserved.</p>
-</p> Contact:</p>
-    <img src="https://i.postimg.cc/c4hCRbwx/mixter-Contact.png">
-    <p>Images hosted by...</p>
-    <a href="https://postimages.org" target="https://postimgs.org">
-    <img src="https://postimgs.org/img/logo.png">
-    </a>
-</footer>
-
-</body>
-</html>
+/* Adjust image size for smaller screens */
+@media only screen and (max-width: 768px) {
+    img.large-screen {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+}
