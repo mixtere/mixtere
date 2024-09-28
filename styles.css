@@ -32,37 +32,68 @@ header {
     height: 50px;
 }
 
-.content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.column {
-    border: 1px solid #ccc;
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Additional styles for menu links */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white; /* Set font color to white */
+    text-decoration: none;
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
     padding: 10px;
     text-align: center;
-    background-color: #fff;
+    margin-top: 20px;
 }
 
-.column img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+/* Adjust image size based on screen size */
+img.large-screen {
+    width: 100%; /* Full width on large screens */
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center the image */
 }
 
-/* Define specific styles for different screen sizes */
+/* Adjust image size for smaller screens */
 @media only screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-    .content {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    /* Adjust styles for even smaller screens */
-    .content {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    img.large-screen {
+        width: 80%; /* Adjust width for smaller screens */
     }
 }
